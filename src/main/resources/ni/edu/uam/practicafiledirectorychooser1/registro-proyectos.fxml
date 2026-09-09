@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="521.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/21.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.practicafiledirectorychooser1.RegistroProyectoController">
+   <children>
+      <Label layoutX="17.0" layoutY="24.0" text="Registro del Proyecto">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Line endX="290.6666564941406" layoutX="115.0" layoutY="63.0" opacity="0.17" startX="-100.0" />
+      <Label layoutX="14.0" layoutY="80.0" text="Nombre del proyecto" />
+      <Label layoutX="14.0" layoutY="152.0" text="Responsable" />
+      <Label layoutX="17.0" layoutY="220.0" text="Descripcion" />
+      <Label layoutX="11.0" layoutY="285.0" text="Archivo de requerimientos" />
+      <Label layoutX="10.0" layoutY="354.0" text="Directorio del proyecto" />
+      <TextField fx:id="txtNombre" layoutX="15.0" layoutY="110.0" prefHeight="25.0" prefWidth="392.0" promptText="Nombre del proyecto" />
+      <TextField fx:id="txtResponsable" layoutX="15.0" layoutY="180.0" prefHeight="25.0" prefWidth="392.0" promptText="Nombre del responsable" />
+      <TextField fx:id="txtDescripcion" layoutX="11.0" layoutY="248.0" prefHeight="25.0" prefWidth="392.0" promptText="Descripcion breve del proyecto" />
+      <TextField fx:id="txtArchivo" editable="false" layoutX="11.0" layoutY="309.0" prefHeight="25.0" prefWidth="281.0" promptText="Seleccione un archivo" />
+      <TextField fx:id="txtDirectorio" editable="false" layoutX="11.0" layoutY="382.0" prefHeight="25.0" prefWidth="281.0" promptText="Seleccione un directorio" />
+      <Line endX="288.0" layoutX="115.0" layoutY="435.0" opacity="0.17" startX="-100.0" />
+      <Button fx:id="btnGuardar" layoutX="16.0" layoutY="464.0" mnemonicParsing="false" onAction="#guardarProyecto" text="Guardar proyecto" />
+      <Button fx:id="btnLimpiar" layoutX="139.0" layoutY="464.0" mnemonicParsing="false" onAction="#limpiar" text="Limpiar" />
+      <Button fx:id="btnSeleccionar1" layoutX="304.0" layoutY="309.0" mnemonicParsing="false" onAction="#seleccionarArchivo" text="Seleccionar" />
+      <Button fx:id="btnSeleccionar2" layoutX="304.0" layoutY="382.0" mnemonicParsing="false" onAction="#seleccionarDirectorio" text="Seleccionar" />
+   </children>
+</AnchorPane>
