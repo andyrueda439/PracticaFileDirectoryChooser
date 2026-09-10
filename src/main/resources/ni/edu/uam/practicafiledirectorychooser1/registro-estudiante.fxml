@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="423.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.practicafiledirectorychooser1.RegistroEstudianteController">
+    <children>
+        <Label layoutX="200.0" layoutY="14.0" text="Registro de Estudiante">
+            <font>
+                <Font name="Times New Roman Bold" size="19.0" />
+            </font>
+        </Label>
+        <Line endX="455.5" layoutX="115.0" layoutY="45.0" opacity="0.4" startX="-100.0" />
+        <Label layoutX="15.0" layoutY="55.0" text="Nombres">
+            <font>
+                <Font name="Times New Roman Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtNombresEstudiante" layoutX="14.0" layoutY="79.0" prefHeight="26.0" prefWidth="557.0" promptText="Nombres del Estudiante" />
+        <Label layoutX="15.0" layoutY="113.0" text="Apellidos">
+            <font>
+                <Font name="Times New Roman Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtApellidos" layoutX="14.0" layoutY="136.0" prefHeight="26.0" prefWidth="557.0" promptText="Apellidos del Estudiante" />
+        <Label layoutX="15.0" layoutY="170.0" text="Direccion">
+            <font>
+                <Font name="Times New Roman Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="245.0" text="Archivo Cedula">
+            <font>
+                <Font name="Times New Roman Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtCedula" layoutX="14.0" layoutY="266.0" prefHeight="26.0" prefWidth="461.0" promptText="Archivo formato PDF o PNG con la Cedula del estudiante" />
+        <Button fx:id="btnSeleccionarCedula" layoutX="491.0" layoutY="266.0" mnemonicParsing="false" onAction="#seleccionarCedula" text="Seleccionar" />
+        <Label layoutX="15.0" layoutY="298.0" text="Directorio del Archivo">
+            <font>
+                <Font name="Times New Roman Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtDirectorioCedula" layoutX="15.0" layoutY="321.0" prefHeight="26.0" prefWidth="461.0" promptText="Seleccione un Directorio" />
+        <Button fx:id="btnSeleccionarDirectorioCedula" layoutX="490.0" layoutY="321.0" mnemonicParsing="false" onAction="#seleccionarDirectorioCedula" text="Seleccionar" />
+        <Button fx:id="btnGuardarEstudiante" layoutX="14.0" layoutY="369.0" mnemonicParsing="false" onAction="#guardarEstudiante" text="Guardar registro estudiantil" />
+        <Button fx:id="btnLimpiarE" layoutX="186.0" layoutY="369.0" mnemonicParsing="false" onAction="#limpiarRegistroEstudiantil" text="Limpiar " />
+        <Line endX="455.5" layoutX="115.0" layoutY="358.0" opacity="0.4" startX="-100.0" />
+        <TextArea fx:id="txtAreaDireccion" layoutX="14.0" layoutY="193.0" prefHeight="48.0" prefWidth="557.0" promptText="Dericcion de el estudiante" />
+    </children>
+</AnchorPane>

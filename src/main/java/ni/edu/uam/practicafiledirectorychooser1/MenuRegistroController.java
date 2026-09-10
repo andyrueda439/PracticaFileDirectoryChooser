@@ -32,4 +32,15 @@ public class MenuRegistroController {
         stage.close();
 
     }
+
+    @FXML
+    private void abrirRegistroEstudiante(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("registro-estudiante.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = new Stage();
+        stage.setTitle("Registro de Estudiante");
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
 }

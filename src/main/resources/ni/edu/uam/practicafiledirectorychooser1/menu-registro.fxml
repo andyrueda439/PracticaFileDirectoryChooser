@@ -12,6 +12,7 @@
                         <Menu fx:id="menuCatalogo" mnemonicParsing="false" text="Catalogo">
                             <items>
                                 <MenuItem fx:id="itemRegistroProyecto" mnemonicParsing="false" onAction="#abrirRegistroProyecto" text="Registro Proyecto" />
+                                <MenuItem fx:id="itemRegistroEstudiante" mnemonicParsing="false" onAction="#abrirRegistroEstudiante" text="Registro Estudiante" />
                             </items>
                         </Menu>
                         <Menu fx:id="menuArchivo" mnemonicParsing="false" text="Archivo">

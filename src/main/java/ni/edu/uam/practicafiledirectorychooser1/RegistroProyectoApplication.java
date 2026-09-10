@@ -14,7 +14,7 @@ public class RegistroProyectoApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(RegistroProyectoController.class.getResource("registro-proyectos.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(RegistroProyectoController.class.getResource("menu-registro.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Bienvenidos al sistema de registro de proyectos");
         stage.setScene(scene);
